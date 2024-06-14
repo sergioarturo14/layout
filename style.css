@@ -1,0 +1,106 @@
+html {
+  height: 100%;
+  width: 100%;
+}.menu {
+  display: block;
+  position: relative;
+  height: 76px;
+  width: 120px;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Bordes superiores */
+.menu.inicio {
+  border-top: #bc00f0 0.3em solid;
+}
+.menu.objetivos {
+  border-top: #0008f0 0.3em solid;
+}
+
+.menu.hacer {
+  border-top: #59ff00 0.3em solid;
+}
+
+.menu.alianzas {
+  border-top: #fa003e 0.3em solid;
+}
+
+.menu > span {
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0%;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+}
+
+.menu:after, .menu > span > span {
+  display: block;
+  text-align: center;
+  border-radius: 0em;
+  padding: 2em 0 1.5em;
+}
+
+.menu:after {
+  content: attr(data-title);
+  width: 100%;
+  background: #000;
+  color: #fff; 
+}
+
+.menu > span > span {
+  width: 120px;
+  color: #fff;
+}
+
+.menu.inicio > span > span {
+  background: #a20b9d;
+}
+
+.menu.objetivos > span > span {
+  background: #3341ff;
+}
+
+.menu.hacer > span > span {
+  background: #00a53c;
+}
+
+.menu.alianzas > span > span {
+  background: #b81800;
+}
+
+.menu:hover > span {
+    height: 100%; 
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li a {
+  display: inline;
+  float: left;
+  text-decoration: none;
+  font-family: sans;
+}
+
+h1{
+    color:#0300a3;
+   font-family: sans-serif;
+}
+
+h3{
+    color:#0300A3;
+   font-family: sans-serif;
+  }
+  .class.img{
+    width: 100px;
+
+
+  }
